@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pong</title>
+</head>
+
+<body>
+    <div style="margin: 0 auto;">
+        <div id="create_or_join_game">
+            <div style="margin: 0 auto;">
+                <button id="btn_create">Create a room</button>
+                <button id="btn_show_join_form">Join a room</button>
+            </div>
+            <div hidden id="join_form">
+                <input type="text" id="room_id">
+                <button id="btn_join">Join</button>
+            </div>
+        </div>
+        <div id="room_info"></div>
+        <div id="play_ground" style="width: 600px;" hidden></div>
+    </div>
+    </div>
+</body>
+<script src="lib/js/socket.io-2.1.1.js"></script>
+<script src="lib/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="lib/js/p5min.js"></script>
+<script type="text/javascript" src="lib/js/handle_room.js"></script>
+<script type="text/javascript" src="lib/js/pong_game_script.js"></script>
+
+</html>

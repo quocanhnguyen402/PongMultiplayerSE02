@@ -1,0 +1,16 @@
+{
+  "name": "newpongse02",
+  "version": "1.0.0",
+  "description": "Pong ",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "natashi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "socket.io": "^2.1.1"
+  }
+}
