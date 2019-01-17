@@ -77,7 +77,7 @@ io.on('connection', function (socket) {
         };
         //Send to all ppl in room include sender
         socket.emit('reset_ball', obj);
-        socket.in(room).emit('reset_ball', obj);
+        socket.broadcast.to(room).emit('reset_ball', obj);
     });
     socket.on('player_right_score', function (room) {
         socket.emit('player_right_score', room);
